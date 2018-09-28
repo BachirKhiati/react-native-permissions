@@ -153,15 +153,15 @@ The current supported permissions are:
 | Camera             | `camera`            | ✔️  | ✔       |
 | Microphone         | `microphone`        | ✔️  | ✔       |
 | Photos             | `photo`             | ✔️  | ✔       |
-| Contacts           | `contacts`          | ✔️  | ✔       |
-| Events             | `event`             | ✔️  | ✔       |
-| Bluetooth          | `bluetooth`         | ✔️  | ❌      |
-| Reminders          | `reminder`          | ✔️  | ❌      |
+| Contacts           | `contacts`          | ❌   | ✔       |
+| Events             | `event`             | ❌   | ✔       |
+| Bluetooth          | `bluetooth`         | ❌   | ❌      |
+| Reminders          | `reminder`          | ❌   | ❌      |
 | Push Notifications | `notification`      | ✔️  | ❌      |
-| Background Refresh | `backgroundRefresh` | ✔️  | ❌      |
-| Speech Recognition | `speechRecognition` | ✔️  | ❌      |
-| mediaLibrary       | `mediaLibrary`      | ✔️  | ❌      |
-| Motion Activity    | `motion`            | ✔️  | ❌      |
+| Background Refresh | `backgroundRefresh` | ❌   | ❌      |
+| Speech Recognition | `speechRecognition` | ❌  | ❌      |
+| mediaLibrary       | `mediaLibrary`      | ❌   | ❌      |
+| Motion Activity    | `motion`            | ❌  | ❌      |
 | Storage            | `storage`           | ❌️ | ✔       |
 | Phone Call         | `callPhone`         | ❌️ | ✔       |
 | Read SMS           | `readSms`           | ❌️ | ✔       |
@@ -227,10 +227,8 @@ So before submitting your app to the App Store, make sure that in your
 `Info.plist` you have the following keys:
 
 ```xml
-<key>NSBluetoothPeripheralUsageDescription</key>
-<string>Some description</string>
-<key>NSCalendarsUsageDescription</key>
-<string>Some description</string>
+
+
 <key>NSCameraUsageDescription</key>
 <string>Some description</string>
 <key>NSLocationWhenInUseUsageDescription</key>
@@ -238,12 +236,6 @@ So before submitting your app to the App Store, make sure that in your
 <key>NSPhotoLibraryAddUsageDescription</key>
 <string>Some description</string>
 <key>NSPhotoLibraryUsageDescription</key>
-<string>Some description</string>
-<key>NSSpeechRecognitionUsageDescription</key>
-<string>Some description</string>
-<key>NSAppleMusicUsageDescription</key>
-<string>Some description</string>
-<key>NSMotionUsageDescription</key>
 <string>Some description</string>
 ```
 This is required because during the phase of processing in the App Store
