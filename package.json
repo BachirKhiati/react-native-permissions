@@ -1,10 +1,14 @@
 {
   "name": "react-native-permissions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check user permissions in React Native",
   "author": "Bachir Khiati <bachir.khiati@gmail.com>",
   "homepage": "https://github.com/BachirKhiati/react-native-permissions",
-  "keywords": ["react-native", "react-permissions", "permissions"],
+  "keywords": [
+    "react-native",
+    "react-permissions",
+    "permissions"
+  ],
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -16,7 +20,10 @@
     "prettier": "prettier --write '**/*.{js,json,md}'"
   },
   "lint-staged": {
-    "**/*.{js,json,md}": ["prettier --write", "git add"]
+    "**/*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "flow-bin": "^0.111.1",
