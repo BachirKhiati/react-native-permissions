@@ -19,9 +19,9 @@
     "**/*.{js,json,md}": ["prettier --write", "git add"]
   },
   "devDependencies": {
-    "flow-bin": "^0.57.3",
-    "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.9.2"
+    "flow-bin": "^0.111.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
   }
 }
