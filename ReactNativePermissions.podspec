@@ -15,7 +15,12 @@ Pod::Spec.new do |s|
   s.platform               = :ios, '9.0'
   s.ios.deployment_target  = '9.0'
 
-  s.preserve_paths         = 'LICENSE', 'package.json'
-  s.source_files           = 'ios/**/*.{h,m}'
-  s.dependency               'React'
+  s.subspec "ReactNativePermissions" do |ss|
+    ss.source_files  = "ios/**/*.{h,m,swift}"
+    s.static_framework = true
+  end
+
+  s.dependency "React"
+
+  s.default_subspec = "ReactNativePermissions"
 end
